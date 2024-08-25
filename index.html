@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+
+    <!-- this link bootstrap css file  -->
+    <link rel="stylesheet" href="./all/vendor/css_boot_strap/bootstrap.min.css">
+    <!-- this link css file  -->
+    <link rel="stylesheet" href="./all/css/style.css">
+    <!-- this link bootstrap icons -->
+    <link rel="stylesheet" href="./all/vendor/bootstrap-icons/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <section class="sec1 mt-5">
+        <div class="container">
+            <div class="header_section text-center">
+                <h1>Product System Management</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="all_col mt-3">
+                        <label for="">Product Name :</label>
+                        <input type="text" class="form form-control" id="productName">
+                    </div>
+                    <div class="all_col mt-3">
+                        <label for="">Product Price :</label>
+                        <input type="text" class="form form-control" id="productPrice">
+                    </div>
+                    <div class="all_col mt-3">
+                        <label for="">Product Category :</label>
+                        <input type="text" class="form form-control" id="productcategory">
+                    </div>
+                    <div class="all_col mt-3">
+                        <label for="">Product Descreption :</label>
+                        <input type="text" class="form form-control" id="productdescription">
+                    </div>
+
+                    <div class="all_col mt-3">
+                        <label for="">Product counter :</label>
+                        <input type="number" value="1" class="form form-control" id="productCounter">
+                    </div>
+                    <div class="all_col mt-3">
+                        <button class="btn btn-primary" id="btn_add" onclick="">Add products</button>
+                        <button class="btn btn-danger" id="deletAll">Delete all products</button>
+                    </div>
+                    <div class="all_col mt-3">
+                        <button class="btn btn-warning" id="editAll">
+                            <input type="number" class="border-0 pr-3" id="editStart" placeholder="edit start">
+                            <input type="number" class="border-0" id="editEnd" placeholder="edit end">
+                            <button class="btn btn-warning" onclick="editAll()">Edit From</button>
+                        </button>
+                    </div>
+                    <div class="all_col mt-3">
+                        <button class="btn btn-danger" id="">
+                            <input type="number" class="border-0 pr-3" id="deleteStart" placeholder="Delete start">
+                            <input type="number" class="border-0" id="deleteEnd" placeholder="Delete end">
+                            <button class="btn btn-danger" onclick="deleteFrom()">Delete From</button>
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-lg-12 mt-5">
+                    <table class="table table-bordered text-center ">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Product Price</th>
+                                <th>Product Category</th>
+                                <th>Product Descreption</th>
+                                <th colspan="2">Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody" class="bg-black">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- this link bootstrap js file -->
+    <script src="./all/vendor/js_bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- this link js file  -->
+    <script src="./all/js/main.js"></script>
+</body>
+
+</html>
